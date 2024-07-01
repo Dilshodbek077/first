@@ -1,38 +1,303 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header .logo {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: black;
+    text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.foto {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 40rem;
 }
 
-.App-link {
-  color: #61dafb;
+.fo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header .icons i {
+    font-size: 1.7rem;
+    color: black;
+    cursor: pointer;
+    margin-right: 2.5rem;
+}
+
+.header-2 {
+    background-image: url("./images/Sharp.png");
+    max-width: 100%;
+    height: 740px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 470px 110px 130px 130px;
+}
+
+.box {
+    width: 540px;
+    height: 240px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 65px;
+}
+
+.box .text {
+    width: 400px;
+    font-size: 40px;
+}
+
+.box .avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+}
+
+.box .avatar-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.footer-text {
+    margin-left: 10rem;
+    font-size: 25px;
+    margin-top: 3rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+    margin-top: 1rem;
+}
+
+.footer-box {
+    width: 354px;
+    height: 456px;
+}
+
+.footer-box .soat {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.footer-box .footer-text-soat {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+
+.person {
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+}
+
+.person-text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.texts-person {
+    margin-top: 0.5rem;
+}
+
+.footer-2 {
+    width: 1160px;
+    height: 375px;
+    background-color: black;
+    border-radius: 20px;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    padding: 40px;
+}
+
+.footer-2 button {
+    width: 112px;
+    height: 32px;
+    border-radius: 5px;
+    padding: 4px, 24px, 4px, 24px;
+    gap: 10px;
+    background-color: rgba(13, 110, 253, 1);
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-2 h2 {
+    width: 325px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 0.5rem;
+}
+
+.footer-2 p {
+    color: #fff;
+}
+
+.footer-2 .person-text {
+    margin-top: 0.5rem;
+}
+
+.footer-2 .goods {
+    padding: 40px;
+    margin-top: 7rem;
+}
+
+.foto-shoes .shoes {
+    width: 445px;
+    height: 250px;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+.text-text {
+    font-size: 30px;
+}
+
+.texts-pers {
+    width: 540px;
+    margin-top: 0.5rem;
+}
+
+.box-shoes {
+    display: flex;
+    margin-left: 10rem;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.btn {
+    width: 272px;
+    height: 64px;
+    border-radius: 5px;
+    padding: 16px, 72px, 16px, 72px;
+    gap: 16px;
+    background-color: rgba(13, 110, 253, 1);
+    color: #fff;
+    font-size: 23px;
+    margin-left: 35rem;
+    margin-top: 3rem;
+    border: none;
+    cursor: pointer;
+}
+
+.boxnew{
+    width: 1160px;
+    height: 375px;
+    background-color: rgba(13, 110, 253, 1);
+    border-radius: 20px;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    padding: 40px;
+}
+
+.boxnewbox h1 {
+    width: 350px;
+    font-size: 40px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.boxnewbox input {
+    width: 367px;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px;
+    padding: 12px;
+    margin-top: 2rem;
+}
+
+.boxnewbox p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+
+.boxnewbox {
+    margin-left: 22rem;
+    margin-top: 3rem;
+}
+
+.hr {
+    width: 100%;
+    height: 1px;
+    border: 2px solid black;
+    margin-top: 2rem;
+}
+
+.endbox {
+   margin-top: 5rem;
+}
+
+.f1 {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.disp {
+    display: flex;
+    gap: 6.8rem;
+    justify-content: center;
+}
+
+.endbox p a{
+    text-decoration: none;
+    opacity: 0.6;
+    color: black;
+}
+
+.endbox input {
+    width: 367px;
+    height: 48px;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 12px;
+    margin-top: 2rem;
+}
+
+.endbox .yoz {
+    margin-left: 14rem;
+}
+
+.dispp {
+    display: flex;
+    gap: 25rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.con {
+    font-size: 30px;
+    display: flex;
+    gap: 3rem;
 }
